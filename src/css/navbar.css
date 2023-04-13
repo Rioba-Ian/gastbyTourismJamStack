@@ -1,0 +1,42 @@
+.navbar {
+  position: relative;
+  padding: 1em;
+}
+
+.nav-logo img {
+  width: 10rem;
+}
+
+.navbar button {
+  position: absolute;
+  right: 0;
+  top: 20%;
+
+  font-size: 1.5rem;
+  color: #184472;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links li + li {
+  margin-left: 2em;
+}
+
+@media (min-width: 799px) {
+  .navbar {
+    padding: 1em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar button {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+}

@@ -2,10 +2,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;600&family=Poppins:wght@300;400;600;700&display=swap");
 :root {
   /* primary */
+  --light-pale-orange: #ebbe90;
+
+  /* text */
+  --dark-navy-text: #184472;
 
   /* neutral */
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 1rem;
+}
+
 body {
   font-family: "Poppins", serif;
+  background-color: var(--light-pale-orange);
+  color: var(--dark-navy-text);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-navy-text);
+}
+
+button {
+  border: none;
+  background-color: transparent;
 }

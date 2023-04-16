@@ -1,0 +1,15 @@
+.error {
+  background: linear-gradient(
+      to top,
+      #184472,
+      #705785,
+      #ac6f8b,
+      #d5938e,
+      #ebbe9b
+    ),
+    center no-repeat;
+  min-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

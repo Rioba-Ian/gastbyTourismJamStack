@@ -1,0 +1,28 @@
+.banner-content {
+  text-align: center;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Chivo Mono", serif;
+}
+
+.banner-content h1 {
+  font-size: clamp(3rem, 3rem + 3vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: normal;
+}
+
+.banner-content p {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.banner-content a {
+  font-size: 1.25rem;
+  color: var(--dark-navy-text);
+  text-transform: uppercase;
+  border: 2px solid var(--dark-navy-text);
+  padding: 0.4em 1em;
+}

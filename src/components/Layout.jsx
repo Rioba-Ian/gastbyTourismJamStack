@@ -5,10 +5,10 @@ import "./layout.css";
 
 export default function Layout({ children }) {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }

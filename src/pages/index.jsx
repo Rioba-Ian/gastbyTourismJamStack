@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import SimpleHero from "../components/SimpleHero";
 import Banner from "../components/Banner";
 import { Link } from "gatsby";
+import About from "../components/Home/About";
 
 export default function index() {
   return (
@@ -15,6 +16,7 @@ export default function index() {
           <Link to="/places">explore places</Link>
         </Banner>
       </SimpleHero>
+      <About />
     </Layout>
   );
 }

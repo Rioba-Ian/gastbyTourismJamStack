@@ -3,7 +3,8 @@
 :root {
   /* primary */
   --light-pale-orange: #ebbe90;
-
+  --dark-purplish-blue: #6d599e;
+  --brownish-pale: #9e7751;
   /* text */
   --dark-navy-text: #184472;
 
@@ -30,6 +31,15 @@ body {
   color: var(--dark-navy-text);
 }
 
+img {
+  max-width: 100%;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
 li {
   list-style: none;
 }
@@ -38,6 +48,7 @@ a {
   text-decoration: none;
   color: var(--dark-navy-text);
   cursor: pointer;
+  display: inline-block;
 }
 
 button {
@@ -69,4 +80,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn .btn-primary {
+  font-size: 1.25rem;
+  color: var(--dark-navy-text);
+  text-transform: uppercase;
+  border: 2px solid var(--dark-navy-text);
+  padding: 0.4em 1em;
 }

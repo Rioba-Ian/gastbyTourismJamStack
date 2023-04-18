@@ -1,0 +1,49 @@
+.about {
+  padding: 3em 0;
+}
+
+.about-content {
+  width: min(80%, 1200px);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.img-container-about {
+  margin: 2em 0;
+}
+
+.img-container-about img {
+  box-shadow: 0.5em 0.5em var(--dark-purplish-blue),
+    -0.5rem -0.5rem var(--dark-navy-text);
+}
+
+.about-info {
+  align-self: start;
+  padding-top: 2em;
+}
+
+.about-info h4 {
+  font-family: "Chivo Mono", serif;
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.about-info p {
+  width: 80%;
+}
+
+.about-info p + p {
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  background-color: var(--dark-navy-text);
+  font-size: 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid var(--dark-navy-text);
+  padding: 0.4em 1em;
+}

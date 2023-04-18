@@ -47,3 +47,23 @@
   border: 2px solid var(--dark-navy-text);
   padding: 0.4em 1em;
 }
+
+@media (min-width: 799px) and (max-width: 999px) {
+  .about-info p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 799px) {
+  .about-content {
+    display: block;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .about-info p {
+    width: 100%;
+  }
+}

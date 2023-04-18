@@ -66,4 +66,8 @@
   .about-info p {
     width: 100%;
   }
+
+  .about-info p + p {
+    margin-top: 1em;
+  }
 }

@@ -36,6 +36,7 @@ img {
 }
 
 p {
+  display: block;
   letter-spacing: 1px;
   line-height: 1.5rem;
 }

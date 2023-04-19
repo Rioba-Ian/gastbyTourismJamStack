@@ -4,6 +4,7 @@
   /* primary */
   --light-pale-orange: #ebbe90;
   --dark-purplish-blue: #6d599e;
+  --light-purplish-blue: #839ceb;
   --brownish-pale: #9e7751;
   /* text */
   --dark-navy-text: #184472;
@@ -78,6 +79,7 @@ button {
     ),
     url("../images/travel-banner-img.jpg") center/cover no-repeat;
 
+  backdrop-filter: saturate(0.2);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -16,8 +16,8 @@
 }
 
 .img-container-about img {
-  box-shadow: 0.5em 0.5em var(--dark-purplish-blue),
-    -0.5rem -0.5rem var(--dark-navy-text);
+  box-shadow: 0.5em 0.5em var(--dark-navy-text),
+    -0.5rem -0.5rem var(--light-purplish-blue);
 }
 
 .about-info {

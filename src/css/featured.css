@@ -1,0 +1,36 @@
+.featured-section {
+  background-color: #839ceb;
+  padding: 4em 0;
+}
+
+.featured {
+  width: min(80%, 1200px);
+  margin: 0 auto;
+}
+
+.featured-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 2rem;
+}
+
+.featured-content article {
+  text-align: center;
+}
+
+.featured-content article img {
+  -webkit-filter: sepia(100%);
+  filter: sepia(50%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.featured-content article img:hover {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
+.featured-content .text-content {
+  width: 80%;
+  margin: 0 auto;
+}

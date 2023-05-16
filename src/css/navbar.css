@@ -1,6 +1,8 @@
 .navbar {
   position: relative;
   padding: 1em;
+  width: min(80%, 1400px);
+  margin: 0 auto;
 }
 
 .nav-logo img {

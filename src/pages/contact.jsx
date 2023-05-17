@@ -1,5 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Contact from "../components/Contact";
+import SimpleHero from "../components/SimpleHero";
 export default function contact() {
-  return <Layout>Contact Page</Layout>;
+  return (
+    <Layout>
+      <Contact />
+    </Layout>
+  );
 }

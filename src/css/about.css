@@ -15,7 +15,11 @@
   margin: 2em 0;
 }
 
-.img-container-about img {
+.img-content {
+  flex-grow: 2;
+}
+
+.about-img {
   box-shadow: 0.5em 0.5em var(--dark-navy-text),
     -0.5rem -0.5rem var(--light-purplish-blue);
 }

@@ -1,15 +1,28 @@
 import React from "react";
 import Title from "../Title";
-import img from "../../images/about-us-img.jpg";
+import { graphql, useStaticQuery } from "gatsby";
 import "../../css/about.css";
+import Img from "gatsby-image";
+
 const About = () => {
+  const data = useStaticQuery(getAbout);
+
+  console.log(data);
+
   return (
     <div className="about">
       <Title title="about" subtitle="Outdoors adventures" />
       <div className="about-content">
-        <article>
+        <article className="img-content">
           <div className="img-container-about">
-            <img src={img} alt="" />
+            <Img
+              className="about-img"
+              fixed={{
+                ...data.file.childImageSharp.fixed,
+                minWidth: 200,
+              }}
+              alt="tent house"
+            />
           </div>
         </article>
 
@@ -32,5 +45,17 @@ const About = () => {
     </div>
   );
 };
+
+const getAbout = graphql`
+  query {
+    file(relativePath: { eq: "aboutus.jpeg" }) {
+      childImageSharp {
+        fixed {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
 
 export default About;

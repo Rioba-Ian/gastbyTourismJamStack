@@ -11,7 +11,7 @@ const Featured = () => {
           {featured.map((item, index) => {
             return (
               <article key={index}>
-                <img src={item.imageUrl} alt="" />
+                <img src={item.imageUrl} alt="featured images" />
                 <div className="text-content">
                   <h4>{item.title}</h4>
                   <p>{item.text}</p>

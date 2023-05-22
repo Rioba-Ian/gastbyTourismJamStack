@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import AniLink from "gatsby-plugin-transition-link";
 import About from "../components/Home/About";
 import Featured from "../components/Home/Featured";
+import { graphql } from "gatsby";
 
 export default function index() {
   return (
@@ -25,3 +26,15 @@ export default function index() {
     </Layout>
   );
 }
+
+export const query = graphql`
+  query GetImages {
+    file(relativePath: { eq: "travel-banner-img.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

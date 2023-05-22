@@ -22,4 +22,11 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
   ],
+  siteMetadata: {
+    title: "Local travels in Kenya",
+    description:
+      "Get to travel local places in Kenya and around the bush with easily accessible hikes and affordable rates",
+    copyright: "Copyright under Ian Rioba",
+    contact: "riobafelix@gmail.com",
+  },
 };

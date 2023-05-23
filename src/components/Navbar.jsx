@@ -2,7 +2,7 @@
 import React from "react";
 import "../css/navbar.css";
 import links from "../constants/links";
-import logo from "../images/travel-leisure-seeklogo.com.svg";
+import logo from "../images/stately-icon.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import AniLink from "gatsby-plugin-transition-link";
 
@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav>
       <div className="navbar">
         <div className="nav-logo">
-          <img src={logo} alt="" />
+          <img src={logo} height={48} width={48} alt="" />
         </div>
         <button>
           <GiHamburgerMenu />

@@ -2,16 +2,16 @@ import React from "react";
 import Layout from "../components/Layout";
 import SimpleHero from "../components/SimpleHero";
 import Banner from "../components/Banner";
-// import { Link } from "gatsby";
+import StyledHero from "../components/StyledHero";
 import AniLink from "gatsby-plugin-transition-link";
 import About from "../components/Home/About";
 import Featured from "../components/Home/Featured";
 import { graphql } from "gatsby";
 
-export default function index() {
+export default function index({ data }) {
   return (
     <Layout>
-      <SimpleHero>
+      <StyledHero hero="true" img={data.file.childImageSharp.fluid}>
         <Banner
           title="Outdoor adventures"
           info="Come and get your head at ease, the right place to get you to relax with your family."
@@ -20,7 +20,7 @@ export default function index() {
             explore places
           </AniLink>
         </Banner>
-      </SimpleHero>
+      </StyledHero>
       <About />
       <Featured />
     </Layout>
@@ -28,11 +28,11 @@ export default function index() {
 }
 
 export const query = graphql`
-  query GetImages {
+  query defaultBcg {
     file(relativePath: { eq: "travel-banner-img.jpg" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
+        fluid(quality: 90, maxWidth: 4000) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

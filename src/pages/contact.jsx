@@ -7,7 +7,7 @@ import { graphql } from "gatsby";
 
 export const query = graphql`
   query {
-    contactBcg: file(relativePath: { eq: "contact.jpg" }) {
+    contactBcg: file(relativePath: { eq: "contact-us.jpg" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp

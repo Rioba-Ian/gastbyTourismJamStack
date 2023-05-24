@@ -21,9 +21,8 @@ export default function contact({ data }) {
   console.log(data);
   return (
     <Layout>
-      <StyledHero img={data.contactBcg.childImageSharp.fluid}>
-        Contact Page
-      </StyledHero>
+      <StyledHero img={data.contactBcg.childImageSharp.fluid}></StyledHero>
+      <Contact />
     </Layout>
   );
 }

@@ -11,7 +11,7 @@ export default function Navbar() {
     <nav>
       <div className="navbar">
         <div className="nav-logo">
-          <img src={logo} height={48} width={48} alt="" />
+          <img src={logo} height={24} width={24} alt="" />
         </div>
         <button>
           <GiHamburgerMenu />

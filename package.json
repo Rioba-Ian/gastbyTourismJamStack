@@ -15,6 +15,7 @@
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
+    "@material-tailwind/react": "^2.0.1",
     "@mui/material": "^5.13.0",
     "babel-plugin-styled-components": "^2.1.1",
     "gatsby": "^5.8.1",
@@ -39,5 +40,11 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gatsby-plugin-postcss": "^6.10.0",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
   }
 }

@@ -7,6 +7,8 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+require("dotenv").config();
+
 module.exports = {
   plugins: [
     {
@@ -19,8 +21,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `j8tvw0cs7n31`,
-        accessToken: "crZoTexVXLCJ9BUwssn7l3IlCEoHe1qhmIHOuOJ-5EE",
+        spaceId: `${process.env.CONTENTFUL_SPACE_ID}`,
+        accessToken: `${process.env.CONTENTFUL_ACCESS_TOKEN}`,
+        environment: "development",
       },
     },
     `gatsby-plugin-image`,
